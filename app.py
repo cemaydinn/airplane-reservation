@@ -6,6 +6,12 @@ import time
 import json
 import random
 import requests
+from abacusai import ApiClient
+
+api_key = 's2_e27c9419392d4b6699f252fcbe38aed7'
+client = ApiClient(api_key)
+
+client.list_use_cases()
 
 class AbacusAIService:
     def __init__(self):
