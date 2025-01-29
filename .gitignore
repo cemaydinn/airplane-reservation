@@ -1,0 +1,66 @@
+# Initialize git repository
+git init
+
+# Create .gitignore file
+echo "venv/
+__pycache__/
+.env
+.streamlit/
+*.pyc" > .gitignore
+
+# Create README.md
+echo "# Airplane Seat Reservation System with Abacus AI
+
+This is a Streamlit-based web application for airplane seat reservations with Abacus AI integration.
+
+## Setup
+
+1. Clone the repository:
+\`\`\`bash
+git clone [your-repo-url]
+cd airplane-reservation
+\`\`\`
+
+2. Create and activate virtual environment:
+\`\`\`bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+\`\`\`
+
+3. Install requirements:
+\`\`\`bash
+pip install -r requirements.txt
+\`\`\`
+
+4. Run the application:
+\`\`\`bash
+streamlit run app.py
+\`\`\`
+
+## Features
+
+- Interactive seat map
+- Real-time seat reservation
+- 15-minute reservation timeout
+- AI-powered seat recommendations
+- Dynamic pricing
+- User session management
+- Reservation management system
+
+## Technologies Used
+
+- Python
+- Streamlit
+- Abacus AI
+- Pandas
+- NumPy
+" > README.md
+
+# Initial commit
+git add .
+git commit -m "Initial commit"
+
+# Add remote repository
+git remote add origin [your-repo-url]
+git branch -M main
+git push -u origin main
